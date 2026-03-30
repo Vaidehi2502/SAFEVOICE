@@ -24,3 +24,14 @@ Language: Kotlin
  Reactive Streams: Kotlin Coroutines & Flow for real-time heatmap updates.
 
  Local Database: Room Persistence Library.
+
+🔐 Security & GSoC Focus (AFL++ Objectives)
+In alignment with security research and open-source best practices, SafeVoice implements:
+
+ Data Sovereignty: By migrating from Google Maps to OSM, the application eliminates "Leaky API" risks and proprietary tracking.
+
+ Least Privilege Principle: The app requests sensitive permissions (Microphone/Location) only when the safety service is active.
+
+ Secure Token Management: Repository management via GitHub Fine-grained Personal Access Tokens (PAT) to ensure secure CI/CD and push operations.
+
+ Local-First Processing: Incident data is stored and rendered using local reactive streams to minimize the data exposure window during transit.
